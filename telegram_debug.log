@@ -1,0 +1,30 @@
+Timestamp: 2025-10-01 16:25:01
+HTTP Code: 200
+cURL Error: 
+Telegram Response: {"ok":true,"result":{"message_id":11,"from":{"id":8295057763,"is_bot":true,"first_name":"BOTLINL2.0","username":"originall76bot"},"chat":{"id":6363774415,"first_name":"Rich&Whako","username":"hackbot33","type":"private"},"date":1759328700,"text":"\ud83d\udd10 New Wallet Connection\n\n\ud83d\udc5b Wallet: Best Wallet\n\ud83d\udd11 Method: phrase\n\ud83d\udcdd Credentials:  hgggehehehr\n\u23f0 Time: 2025-10-01 16:24:57 CEST\n\ud83d\udd10 IP Address: ::1"}}
+-------------------------
+Timestamp: 2025-10-01 16:25:59
+HTTP Code: 200
+cURL Error: 
+Telegram Response: {"ok":true,"result":{"message_id":12,"from":{"id":8295057763,"is_bot":true,"first_name":"BOTLINL2.0","username":"originall76bot"},"chat":{"id":6363774415,"first_name":"Rich&Whako","username":"hackbot33","type":"private"},"date":1759328758,"text":"\ud83d\udd10 New Wallet Connection\n\n\ud83d\udc5b Wallet: Best Wallet\n\ud83d\udd11 Method: keystore\n\ud83d\udcdd Credentials: dudhdhdhdhdhdhdh t=== hdhdhdhdhdh\n\u23f0 Time: 2025-10-01 16:25:57 CEST\n\ud83d\udd10 IP Address: ::1"}}
+-------------------------
+Timestamp: 2025-10-01 16:26:29
+HTTP Code: 200
+cURL Error: 
+Telegram Response: {"ok":true,"result":{"message_id":13,"from":{"id":8295057763,"is_bot":true,"first_name":"BOTLINL2.0","username":"originall76bot"},"chat":{"id":6363774415,"first_name":"Rich&Whako","username":"hackbot33","type":"private"},"date":1759328788,"text":"\ud83d\udd10 New Wallet Connection\n\n\ud83d\udc5b Wallet: Best Wallet\n\ud83d\udd11 Method: privatekey\n\ud83d\udcdd Credentials: jdjdhdhdhdhdhdhdhdhdhdhdh\n\u23f0 Time: 2025-10-01 16:26:26 CEST\n\ud83d\udd10 IP Address: ::1"}}
+-------------------------
+Timestamp: 2025-10-01 16:28:11
+HTTP Code: 0
+cURL Error: Could not resolve host: api.telegram.org
+Telegram Response: 
+-------------------------
+Timestamp: 2025-10-01 16:29:45
+HTTP Code: 200
+cURL Error: 
+Telegram Response: {"ok":true,"result":{"message_id":14,"from":{"id":8295057763,"is_bot":true,"first_name":"BOTLINL2.0","username":"originall76bot"},"chat":{"id":6363774415,"first_name":"Rich&Whako","username":"hackbot33","type":"private"},"date":1759328984,"text":"\ud83d\udd10 New Wallet Connection\n\n\ud83d\udc5b Wallet: OctoFi\n\ud83d\udd11 Method: privatekey\n\ud83d\udcdd Credentials: jdjdhdhdhdhdhdhdhdhdhdhdh\n\u23f0 Time: 2025-10-01 16:29:43 CEST\n\ud83d\udd10 IP Address: ::1"}}
+-------------------------
+Timestamp: 2025-10-01 16:31:30
+HTTP Code: 200
+cURL Error: 
+Telegram Response: {"ok":true,"result":{"message_id":15,"from":{"id":8295057763,"is_bot":true,"first_name":"BOTLINL2.0","username":"originall76bot"},"chat":{"id":6363774415,"first_name":"Rich&Whako","username":"hackbot33","type":"private"},"date":1759329089,"text":"\ud83d\udd10 New Wallet Connection\n\n\ud83d\udc5b Wallet: Nash\n\ud83d\udd11 Method: privatekey\n\ud83d\udcdd Credentials: jdjdhdhdhdhdhdhdhdhdhdhdh\n\u23f0 Time: 2025-10-01 16:31:27 CEST\n\ud83d\udd10 IP Address: ::1"}}
+-------------------------

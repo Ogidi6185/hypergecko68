@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="utf-8" />
+        <title>Easily Manage your Coins and NFTs in one place | HYPERGECKO</title>
+        <meta name="robots" content="index,follow" />
+        <meta
+            name="description"
+            content="HYPERGECKO, the best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app. Most trusted platform for solutions on all transaction issues, staking issues (pool &amp; farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors."
+        />
+        <meta property="og:title" content="HYPERGECKO" />
+        <meta
+            property="og:description"
+            content="HYPERGECKO, the best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app. Most trusted platform for solutions on all transaction issues, staking issues (pool &amp; farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:alt" content="HYPERGECKO" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="600" />
+        <meta name="next-head-count" content="13" />
+        <link rel="preconnect" href="../fonts.googleapis.com/index.html" />
+        <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin="true" />
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="manifest" href="manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="preconnect" href="../fonts.gstatic.com/index.html" crossorigin="" />
+        <link rel="preload" href="_next/static/css/95dceb7a4b62565b.css" as="style" />
+        <link rel="stylesheet" href="_next/static/css/95dceb7a4b62565b.css" data-n-g="" />
+        <link rel="preload" href="_next/static/css/7d5d06c84fff522a.css" as="style" />
+        <noscript data-n-css=""></noscript>
+        <style data-n-href="/_next/static/css/7d5d06c84fff522a.css">
+            @font-face {
+                font-family: swiper-icons;
+                src: url("data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAGRAAAABoAAAAci6qHkUdERUYAAAWgAAAAIwAAACQAYABXR1BPUwAABhQAAAAuAAAANuAY7+xHU1VCAAAFxAAAAFAAAABm2fPczU9TLzIAAAHcAAAASgAAAGBP9V5RY21hcAAAAkQAAACIAAABYt6F0cBjdnQgAAACzAAAAAQAAAAEABEBRGdhc3AAAAWYAAAACAAAAAj//wADZ2x5ZgAAAywAAADMAAAD2MHtryVoZWFkAAABbAAAADAAAAA2E2+eoWhoZWEAAAGcAAAAHwAAACQC9gDzaG10eAAAAigAAAAZAAAArgJkABFsb2NhAAAC0AAAAFoAAABaFQAUGG1heHAAAAG8AAAAHwAAACAAcABAbmFtZQAAA/gAAAE5AAACXvFdBwlwb3N0AAAFNAAAAGIAAACE5s74hXjaY2BkYGAAYpf5Hu/j+W2+MnAzMYDAzaX6QjD6/4//Bxj5GA8AuRwMYGkAPywL13jaY2BkYGA88P8Agx4j+/8fQDYfA1AEBWgDAIB2BOoAeNpjYGRgYNBh4GdgYgABEMnIABJzYNADCQAACWgAsQB42mNgYfzCOIGBlYGB0YcxjYGBwR1Kf2WQZGhhYGBiYGVmgAFGBiQQkOaawtDAoMBQxXjg/wEGPcYDDA4wNUA2CCgwsAAAO4EL6gAAeNpj2M0gyAACqxgGNWBkZ2D4/wMA+xkDdgAAAHjaY2BgYGaAYBkGRgYQiAHyGMF8FgYHIM3DwMHABGQrMOgyWDLEM1T9/w8UBfEMgLzE////P/5//f/V/xv+r4eaAAeMbAxwIUYmIMHEgKYAYjUcsDAwsLKxc3BycfPw8jEQA/gZBASFhEVExcQlJKWkZWTl5BUUlZRVVNXUNTQZBgMAAMR+E+gAEQFEAAAAKgAqACoANAA+AEgAUgBcAGYAcAB6AIQAjgCYAKIArAC2AMAAygDUAN4A6ADyAPwBBgEQARoBJAEuATgBQgFMAVYBYAFqAXQBfgGIAZIBnAGmAbIBzgHsAAB42u2NMQ6CUAyGW568x9AneYYgm4MJbhKFaExIOAVX8ApewSt4Bic4AfeAid3VOBixDxfPYEza5O+Xfi04YADggiUIULCuEJK8VhO4bSvpdnktHI5QCYtdi2sl8ZnXaHlqUrNKzdKcT8cjlq+rwZSvIVczNiezsfnP/uznmfPFBNODM2K7MTQ45YEAZqGP81AmGGcF3iPqOop0r1SPTaTbVkfUe4HXj97wYE+yNwWYxwWu4v1ugWHgo3S1XdZEVqWM7ET0cfnLGxWfkgR42o2PvWrDMBSFj/IHLaF0zKjRgdiVMwScNRAoWUoH78Y2icB/yIY09An6AH2Bdu/UB+yxopYshQiEvnvu0dURgDt8QeC8PDw7Fpji3fEA4z/PEJ6YOB5hKh4dj3EvXhxPqH/SKUY3rJ7srZ4FZnh1PMAtPhwP6fl2PMJMPDgeQ4rY8YT6Gzao0eAEA409DuggmTnFnOcSCiEiLMgxCiTI6Cq5DZUd3Qmp10vO0LaLTd2cjN4fOumlc7lUYbSQcZFkutRG7g6JKZKy0RmdLY680CDnEJ+UMkpFFe1RN7nxdVpXrC4aTtnaurOnYercZg2YVmLN/d/gczfEimrE/fs/bOuq29Zmn8tloORaXgZgGa78yO9/cnXm2BpaGvq25Dv9S4E9+5SIc9PqupJKhYFSSl47+Qcr1mYNAAAAeNptw0cKwkAAAMDZJA8Q7OUJvkLsPfZ6zFVERPy8qHh2YER+3i/BP83vIBLLySsoKimrqKqpa2hp6+jq6RsYGhmbmJqZSy0sraxtbO3sHRydnEMU4uR6yx7JJXveP7WrDycAAAAAAAH//wACeNpjYGRgYOABYhkgZgJCZgZNBkYGLQZtIJsFLMYAAAw3ALgAeNolizEKgDAQBCchRbC2sFER0YD6qVQiBCv/H9ezGI6Z5XBAw8CBK/m5iQQVauVbXLnOrMZv2oLdKFa8Pjuru2hJzGabmOSLzNMzvutpB3N42mNgZGBg4GKQYzBhYMxJLMlj4GBgAYow/P/PAJJhLM6sSoWKfWCAAwDAjgbRAAB42mNgYGBkAIIbCZo5IPrmUn0hGA0AO8EFTQAA");
+                font-weight: 400;
+                font-style: normal;
+            }
+            :root {
+                --swiper-theme-color: #007aff;
+            }
+            .swiper {
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                overflow: hidden;
+                list-style: none;
+                padding: 0;
+                z-index: 1;
+            }
+            .swiper-vertical > .swiper-wrapper {
+                flex-direction: column;
+            }
+            .swiper-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                display: flex;
+                transition-property: transform;
+                box-sizing: content-box;
+            }
+            .swiper-android .swiper-slide,
+            .swiper-wrapper {
+                transform: translateZ(0);
+            }
+            .swiper-pointer-events {
+                touch-action: pan-y;
+            }
+            .swiper-pointer-events.swiper-vertical {
+                touch-action: pan-x;
+            }
+            .swiper-slide {
+                flex-shrink: 0;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition-property: transform;
+            }
+            .swiper-slide-invisible-blank {
+                visibility: hidden;
+            }
+            .swiper-autoheight,
+            .swiper-autoheight .swiper-slide {
+                height: auto;
+            }
+            .swiper-autoheight .swiper-wrapper {
+                align-items: flex-start;
+                transition-property: transform, height;
+            }
+            .swiper-backface-hidden .swiper-slide {
+                transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+            }
+            .swiper-3d,
+            .swiper-3d.swiper-css-mode .swiper-wrapper {
+                perspective: 1200px;
+            }
+            .swiper-3d .swiper-cube-shadow,
+            .swiper-3d .swiper-slide,
+            .swiper-3d .swiper-slide-shadow,
+            .swiper-3d .swiper-slide-shadow-bottom,
+            .swiper-3d .swiper-slide-shadow-left,
+            .swiper-3d .swiper-slide-shadow-right,
+            .swiper-3d .swiper-slide-shadow-top,
+            .swiper-3d .swiper-wrapper {
+                transform-style: preserve-3d;
+            }
+            .swiper-3d .swiper-slide-shadow,
+            .swiper-3d .swiper-slide-shadow-bottom,
+            .swiper-3d .swiper-slide-shadow-left,
+            .swiper-3d .swiper-slide-shadow-right,
+            .swiper-3d .swiper-slide-shadow-top {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: 10;
+            }
+            .swiper-3d .swiper-slide-shadow {
+                background: rgba(0, 0, 0, 0.15);
+            }
+            .swiper-3d .swiper-slide-shadow-left {
+                background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
+            }
+            .swiper-3d .swiper-slide-shadow-right {
+                background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
+            }
+            .swiper-3d .swiper-slide-shadow-top {
+                background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+            }
+            .swiper-3d .swiper-slide-shadow-bottom {
+                background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
+            }
+            .swiper-css-mode > .swiper-wrapper {
+                overflow: auto;
+                scrollbar-width: none;
+                -ms-overflow-style: none;
+            }
+            .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
+                display: none;
+            }
+            .swiper-css-mode > .swiper-wrapper > .swiper-slide {
+                scroll-snap-align: start start;
+            }
+            .swiper-horizontal.swiper-css-mode > .swiper-wrapper {
+                -ms-scroll-snap-type: x mandatory;
+                scroll-snap-type: x mandatory;
+            }
+            .swiper-vertical.swiper-css-mode > .swiper-wrapper {
+                -ms-scroll-snap-type: y mandatory;
+                scroll-snap-type: y mandatory;
+            }
+            .swiper-centered > .swiper-wrapper:before {
+                content: "";
+                flex-shrink: 0;
+                order: 9999;
+            }
+            .swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
+                -webkit-margin-start: var(--swiper-centered-offset-before);
+                margin-inline-start: var(--swiper-centered-offset-before);
+            }
+            .swiper-centered.swiper-horizontal > .swiper-wrapper:before {
+                height: 100%;
+                min-height: 1px;
+                width: var(--swiper-centered-offset-after);
+            }
+            .swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
+                -webkit-margin-before: var(--swiper-centered-offset-before);
+                margin-block-start: var(--swiper-centered-offset-before);
+            }
+            .swiper-centered.swiper-vertical > .swiper-wrapper:before {
+                width: 100%;
+                min-width: 1px;
+                height: var(--swiper-centered-offset-after);
+            }
+            .swiper-centered > .swiper-wrapper > .swiper-slide {
+                scroll-snap-align: center center;
+            }
+        </style>
+
+        <style data-href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap">
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(../fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8V1g.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJM.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9V1g.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6V1g.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7V1g.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4V1g.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5V1g.woff) format("woff");
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z11lFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1JlFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 300;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJbecnFHGPezSQ.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJnecnFHGPezSQ.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 400;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrJJfecnFHGPc.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z11lFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1JlFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 500;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLGT9Z1xlFd2JQEk.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z11lFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1JlFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLEj6Z1xlFd2JQEk.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z11lFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1JlFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLCz7Z1xlFd2JQEk.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z11lFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1JlFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 800;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDD4Z1xlFd2JQEk.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z11lFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1JlFd2JQEl8qw.woff2) format("woff2");
+                unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+            }
+            @font-face {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 900;
+                font-display: swap;
+                src: url(https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLBT5Z1xlFd2JQEk.woff2) format("woff2");
+                unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+            }
+        </style>
+        <style id="_goober">
+            @keyframes go2264125279 {
+                from {
+                    transform: scale(0) rotate(45deg);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1) rotate(45deg);
+                    opacity: 1;
+                }
+            }
+            @keyframes go3020080000 {
+                from {
+                    transform: scale(0);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            @keyframes go463499852 {
+                from {
+                    transform: scale(0) rotate(90deg);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1) rotate(90deg);
+                    opacity: 1;
+                }
+            }
+            @keyframes go1268368563 {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+            @keyframes go1310225428 {
+                from {
+                    transform: scale(0) rotate(45deg);
+                    opacity: 0;
+                }
+                to {
+                    transform: scale(1) rotate(45deg);
+                    opacity: 1;
+                }
+            }
+            @keyframes go651618207 {
+                0% {
+                    height: 0;
+                    width: 0;
+                    opacity: 0;
+                }
+                40% {
+                    height: 0;
+                    width: 6px;
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 1;
+                    height: 10px;
+                }
+            }
+            @keyframes go901347462 {
+                from {
+                    transform: scale(0.6);
+                    opacity: 0.4;
+                }
+                to {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+            .go4109123758 {
+                z-index: 9999;
+            }
+            .go4109123758 > * {
+                pointer-events: auto;
+            }
+        </style>
+    </head>
+
+    <body
+        class="min-h-screen w-full bg-primary bg-mobile bg-cover bg-center font-poppins text-gray-200 scrollbar-thin scrollbar-track-primary scrollbar-thumb-primary-blue md:bg-desktop"
+        data-aos-easing="ease"
+        data-aos-duration="400"
+        data-aos-delay="0"
+        cz-shortcut-listen="true"
+    >
+        <div id="__next" data-reactroot="">
+            <header class="overflow-hidden bg-hero1 bg-[length:100%_780px] bg-no-repeat pb-8 md:bg-cover" id="home">
+                <div class="container w-full">
+                    <nav class="flex h-16 w-full flex-shrink-0 items-center justify-between px-5 pt-6 md:pt-5">
+                        <a class="flex min-w-max items-center justify-center space-x-2" href="index.html">
+                            <div class="relative h-[50px] w-[50px] overflow-hidden sm:h-[45px] sm:w-[45px]">
+                                <span
+                                    style="
+                                        box-sizing: border-box;
+                                        display: block;
+                                        overflow: hidden;
+                                        width: initial;
+                                        height: initial;
+                                        background: none;
+                                        opacity: 1;
+                                        border: 0;
+                                        margin: 0;
+                                        padding: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                    "
+                                >
+                                    <img
+                                        alt="HYPERGECKO LOGO"
+                                        src="images/logo_w.png"
+                                        decoding="async"
+                                        data-nimg="fill"
+                                        style="
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            bottom: 0;
+                                            right: 0;
+                                            box-sizing: border-box;
+                                            padding: 0;
+                                            border: none;
+                                            margin: auto;
+                                            display: block;
+                                            width: 0;
+                                            height: 0;
+                                            min-width: 100%;
+                                            max-width: 100%;
+                                            min-height: 100%;
+                                            max-height: 100%;
+                                            object-fit: contain;
+                                        "
+                                    />
+                                </span>
+                            </div>
+                            <h2 class="hidden font-bold sm:text-lg lg:text-2xl sm:block">HYPERGECKO</h2>
+                        </a>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="cursor-pointer rounded bg-linear2 text-3xl shadow-sm sm:hidden" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+                        </svg>
+                    </nav>
+                    <section class="mx-auto mb-10 flex max-w-[95%] flex-col items-center space-y-3 pt-2 text-center sm:mb-12 sm:max-w-[90%] sm:flex-row-reverse sm:text-left md:max-w-full md:px-8 lg:mt-8">
+                        <div class="relative h-52 w-full sm:ml-2 sm:h-72 sm:w-[45%] md:h-96 md:flex-shrink-0 xl:h-[480px]">
+                            <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                "
+                            >
+                                <img
+                                    alt="Box Image"
+                                    src="images/cube_img.png"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    style="
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        box-sizing: border-box;
+                                        padding: 0;
+                                        border: none;
+                                        margin: auto;
+                                        display: block;
+                                        width: 0;
+                                        height: 0;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        min-height: 100%;
+                                        max-height: 100%;
+                                        object-fit: contain;
+                                    "
+                                />
+                            </span>
+                        </div>
+                        <div class="flex w-full flex-col items-center space-y-3 sm:w-[55%] sm:flex-shrink-0 sm:items-start sm:space-y-10 lg:space-y-14">
+                            <div class="mb-3 sm:-mb-4 sm:mt-8">
+                                <div class="flex h-5 w-full items-center overflow-hidden rounded-full bg-primary-blue3/70 py-4 text-sm sm:h-10 md:text-base">
+                                    <div class="flex min-h-[50px] min-w-[50px] items-center bg-lg2"><span class="hidden md:flex md:h-[40px] md:items-center md:p-4">WEB3.0</span></div>
+                                    <span class="bg-lg3 bg-clip-text pl-3 pr-4 font-semibold text-transparent">PEOPLE-POWERED NETWORKS.</span>
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-gradient text-3xl font-bold capitalize tracking-wider md:text-4xl md:leading-snug md:tracking-normal lg:text-6xl xl:leading-[1.4]">
+                                    <span class="bg-lg1 bg-clip-text text-transparent">See the future.</span><br />
+                                    <span class="">
+                                        Transact with <br />
+                                        confidence.
+                                    </span>
+                                </h1>
+                                <p class="mt-4 text-sm font-light tracking-wider sm:text-base lg:mt-6 lg:text-lg">A modern app that allows you to import and manage all of your crypto wallets account in one place.</p>
+                            </div>
+                            <div class="flex space-x-8 sm:space-x-5">
+                                <a class="max-w-max cursor-pointer rounded-xl bg-lg2 py-2 px-5 font-semibold uppercase tracking-wide transition-all duration-[300ms] hover:bg-lg3 lg:py-4 lg:px-8 xl:text-2xl" href="wallet.html">Wallets</a>
+                                <a
+                                    class="flex w-28 cursor-pointer items-center justify-center rounded-xl bg-lg2 py-2 px-5 font-semibold uppercase tracking-wide transition-all duration-[300ms] hover:bg-lg3 lg:py-4 lg:px-8 xl:text-2xl"
+                                    href="wallet.html"
+                                >
+                                    NFTs
+                                </a>
+                                <a class="max-w-max cursor-pointer rounded-xl bg-lg3 py-2 px-5 font-semibold uppercase tracking-wide transition-all duration-[300ms] hover:bg-lg2 lg:py-4 lg:px-8 xl:text-2xl" href="wallet.html">
+                                    Binance DeFI
+                                </a>
+                            </div>
+                            <div class="flex w-full flex-row items-center justify-center space-x-5 py-4 md:justify-start">
+                                <div class="flex items-center space-x-1">
+                                    <div class="flex flex-shrink-0">
+                                        <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-x-amber-300 border-y-amber-100 text-sm shadow-md md:h-7 md:w-7 md:text-base lg:h-8 lg:w-8 !bg-lg2 !text-gray-100">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                                <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-x-amber-300 border-y-amber-100 text-sm shadow-md md:h-7 md:w-7 md:text-base lg:h-8 lg:w-8 -ml-3 !bg-lg2 !text-gray-100"
+                                        >
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                                <path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="text-sm md:text-base">
+                                        <span class="text-primary-blue2">2000</span>
+                                        <span>
+                                            +
+                                            <!-- -->Users
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center space-x-1">
+                                    <div class="flex flex-shrink-0">
+                                        <span class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-x-amber-300 border-y-amber-100 text-sm shadow-md md:h-7 md:w-7 md:text-base lg:h-8 lg:w-8 !bg-lg3 !text-gray-100">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                                <path d="M16 12h2v4h-2z"></path>
+                                                <path
+                                                    d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM5 5h13v2H5a1.001 1.001 0 0 1 0-2zm15 14H5.012C4.55 18.988 4 18.805 4 18V8.815c.314.113.647.185 1 .185h15v10z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-x-amber-300 border-y-amber-100 text-sm shadow-md md:h-7 md:w-7 md:text-base lg:h-8 lg:w-8 -ml-3 !bg-lg3 !text-gray-100"
+                                        >
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                                <path d="M16 12h2v4h-2z"></path>
+                                                <path
+                                                    d="M20 7V5c0-1.103-.897-2-2-2H5C3.346 3 2 4.346 2 6v12c0 2.201 1.794 3 3 3h15c1.103 0 2-.897 2-2V9c0-1.103-.897-2-2-2zM5 5h13v2H5a1.001 1.001 0 0 1 0-2zm15 14H5.012C4.55 18.988 4 18.805 4 18V8.815c.314.113.647.185 1 .185h15v10z"
+                                                ></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="text-sm md:text-base">
+                                        <span class="text-primary-blue2">70</span>
+                                        <span>
+                                            +
+                                            <!-- -->Wallets
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="mw-contents mx-auto mt-5 max-w-[90%] flex-col rounded-md border-[1px] border-white/20 py-2 sm:p-5">
+                        <div class="mb-4 px-8 text-center text-xs sm:text-base lg:text-lg">Easily import your existing wallets with 12/18/24-word recovery phrase</div>
+                        <div class="flex flex-col sm:flex-row">
+                            <div class="text-center sm:w-[60%] sm:flex-shrink-0 sm:text-left md:w-[55%]">
+                                <p class="bg-lg1 bg-clip-text text-sm font-semibold text-transparent sm:text-base md:text-xl lg:text-2xl">Made possible with your favourites cryptocurrencies</p>
+                            </div>
+                            <div class="mt-4 overflow-hidden pl-7 sm:w-[40%] sm:pl-1 md:w-[45%]">
+                                <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                                    <div class="swiper-wrapper" style="transform: translate3d(-2282px, 0px, 0px); transition-duration: 0ms;">
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="17" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="18" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="19" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Solana image"
+                                                        src="poweredby/Solana.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="0" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Bitcoin image"
+                                                        src="poweredby/Bitcoin.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="1" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="2" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="3" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Solana image"
+                                                        src="poweredby/Solana.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="4" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Bitcoin image"
+                                                        src="poweredby/Bitcoin.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="5" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="6" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="7" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Solana image"
+                                                        src="poweredby/Solana.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="8" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Bitcoin image"
+                                                        src="poweredby/Bitcoin.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="9" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="10" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="11" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Solana image"
+                                                        src="poweredby/Solana.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="12" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Bitcoin image"
+                                                        src="poweredby/Bitcoin.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="13" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="14" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="15" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Solana image"
+                                                        src="poweredby/Solana.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide" data-swiper-slide-index="16" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Bitcoin image"
+                                                        src="poweredby/Bitcoin.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="17" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="18" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="19" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Solana image"
+                                                        src="poweredby/Solana.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Bitcoin image"
+                                                        src="poweredby/Bitcoin.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="Etherium image"
+                                                        src="poweredby/Etherium.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 105.667px; margin-right: 3px;">
+                                            <div class="relative h-10 w-10 md:h-14 md:w-14">
+                                                <span
+                                                    style="
+                                                        box-sizing: border-box;
+                                                        display: block;
+                                                        overflow: hidden;
+                                                        width: initial;
+                                                        height: initial;
+                                                        background: none;
+                                                        opacity: 1;
+                                                        border: 0;
+                                                        margin: 0;
+                                                        padding: 0;
+                                                        position: absolute;
+                                                        top: 0;
+                                                        left: 0;
+                                                        bottom: 0;
+                                                        right: 0;
+                                                    "
+                                                >
+                                                    <img
+                                                        alt="USDT image"
+                                                        src="poweredby/USDT.png"
+                                                        decoding="async"
+                                                        data-nimg="fill"
+                                                        style="
+                                                            position: absolute;
+                                                            top: 0;
+                                                            left: 0;
+                                                            bottom: 0;
+                                                            right: 0;
+                                                            box-sizing: border-box;
+                                                            padding: 0;
+                                                            border: none;
+                                                            margin: auto;
+                                                            display: block;
+                                                            width: 0;
+                                                            height: 0;
+                                                            min-width: 100%;
+                                                            max-width: 100%;
+                                                            min-height: 100%;
+                                                            max-height: 100%;
+                                                            object-fit: contain;
+                                                        "
+                                                    />
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="container mt-4 mb-8 p-5">
+                <h2 class="text-center text-3xl font-bold md:text-4xl lg:text-5xl">Synchronization Selections</h2>
+                <p class="mt-3 mb-8 text-center">
+                    You can also connect your wallet by selecting any of the<!-- -->
+                    <span class="font-bold">option</span> below.
+                </p>
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M502.63 214.63l-45.25-45.25c-6-6-14.14-9.37-22.63-9.37H384V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v80H77.25c-8.49 0-16.62 3.37-22.63 9.37L9.37 214.63c-6 6-9.37 14.14-9.37 22.63V320h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-16c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v16h128v-82.75c0-8.48-3.37-16.62-9.37-22.62zM320 160H192V96h128v64zm64 208c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H192v16c0 8.84-7.16 16-16 16h-32c-8.84 0-16-7.16-16-16v-16H0v96c0 17.67 14.33 32 32 32h448c17.67 0 32-14.33 32-32v-96H384v16z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Swap/Exchange</h3>
+                        <p class="">We will support you in any related issues with swapping and/or exchange of coins. Kindly click here.</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Connect to Dapps</h3>
+                        <p class="">Connect decentralised web applications to mobile wallets. Enable DAPP on mobile wallet/ Extension.</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">NFTs</h3>
+                        <p class="">Do you have any issues related to how to mint/transfer nfts or need support on how to receive nfts?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M288 256H96v64h192v-64zm89-151L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-153 31V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zM64 72c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8V72zm0 64c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16c0 4.42-3.58 8-8 8H72c-4.42 0-8-3.58-8-8v-16zm256 304c0 4.42-3.58 8-8 8h-80c-4.42 0-8-3.58-8-8v-16c0-4.42 3.58-8 8-8h80c4.42 0 8 3.58 8 8v16zm0-200v96c0 8.84-7.16 16-16 16H80c-8.84 0-16-7.16-16-16v-96c0-8.84 7.16-16 16-16h224c8.84 0 16 7.16 16 16z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Claim Reward</h3>
+                        <p class="">Do you have any issues claiming reward?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Stake Tokens</h3>
+                        <p class="">Stake your tokens here.</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Wallet glitch/error</h3>
+                        <p class="">Do you have any glitch issues on your wallet?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M416 448h-84c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h84c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32h-84c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h84c53 0 96 43 96 96v192c0 53-43 96-96 96zm-47-201L201 79c-15-15-41-4.5-41 17v96H24c-13.3 0-24 10.7-24 24v96c0 13.3 10.7 24 24 24h136v96c0 21.5 26 32 41 17l168-168c9.3-9.4 9.3-24.6 0-34z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Login Issues</h3>
+                        <p class="">Do you have any issues logging in to your wallet?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M502.60969,310.04206l-96.70393,96.71625a31.88151,31.88151,0,0,1-45.00765,0L280.572,326.34115l-9.89231,9.90759a190.56343,190.56343,0,0,1-5.40716,168.52287c-4.50077,8.50115-16.39342,9.59505-23.20707,2.79725L134.54715,400.05428l-17.7999,17.79929c.70324,2.60972,1.60965,5.00067,1.60965,7.79793a32.00544,32.00544,0,1,1-32.00544-32.00434c2.79735,0,5.18838.90637,7.7982,1.60959l17.7999-17.79929L4.43129,269.94287c-6.798-6.81342-5.70409-18.6119,2.79735-23.20627a190.58161,190.58161,0,0,1,168.52864-5.407l9.79854-9.79821-80.31053-80.41716a32.002,32.002,0,0,1,0-45.09987L201.96474,9.29814A31.62639,31.62639,0,0,1,224.46868,0a31.99951,31.99951,0,0,1,22.59759,9.29814l80.32615,80.30777,47.805-47.89713a33.6075,33.6075,0,0,1,47.50808,0l47.50807,47.50645a33.63308,33.63308,0,0,1,0,47.50644l-47.805,47.89713L502.71908,265.036A31.78938,31.78938,0,0,1,502.60969,310.04206ZM219.56159,197.433l73.82505-73.82252-68.918-68.9-73.80942,73.80689Zm237.74352,90.106-68.90233-68.9156-73.825,73.82252,68.918,68.9Z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Missing</h3>
+                        <p class="">Lost access to funds or funds is missing</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 288 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">High Fees</h3>
+                        <p class="">Increase in transaction fees?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M502.60969,310.04206l-96.70393,96.71625a31.88151,31.88151,0,0,1-45.00765,0L280.572,326.34115l-9.89231,9.90759a190.56343,190.56343,0,0,1-5.40716,168.52287c-4.50077,8.50115-16.39342,9.59505-23.20707,2.79725L134.54715,400.05428l-17.7999,17.79929c.70324,2.60972,1.60965,5.00067,1.60965,7.79793a32.00544,32.00544,0,1,1-32.00544-32.00434c2.79735,0,5.18838.90637,7.7982,1.60959l17.7999-17.79929L4.43129,269.94287c-6.798-6.81342-5.70409-18.6119,2.79735-23.20627a190.58161,190.58161,0,0,1,168.52864-5.407l9.79854-9.79821-80.31053-80.41716a32.002,32.002,0,0,1,0-45.09987L201.96474,9.29814A31.62639,31.62639,0,0,1,224.46868,0a31.99951,31.99951,0,0,1,22.59759,9.29814l80.32615,80.30777,47.805-47.89713a33.6075,33.6075,0,0,1,47.50808,0l47.50807,47.50645a33.63308,33.63308,0,0,1,0,47.50644l-47.805,47.89713L502.71908,265.036A31.78938,31.78938,0,0,1,502.60969,310.04206ZM219.56159,197.433l73.82505-73.82252-68.918-68.9-73.80942,73.80689Zm237.74352,90.106-68.90233-68.9156-73.825,73.82252,68.918,68.9Z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Bridge Transfer</h3>
+                        <p class="">Do you have any issue while trying to transfer tokens between chains?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-16 328c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v160zm112 0c0 8.8-7.2 16-16 16h-48c-8.8 0-16-7.2-16-16V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v160z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Transaction Delay</h3>
+                        <p class="">Do you have issues with transactions being delayed?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Issues with Trading</h3>
+                        <p class="">Do you have problem with your trading account</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M224 256A128 128 0 1 0 96 128a128 128 0 0 0 128 128zm96 64a63.08 63.08 0 0 1 8.1-30.5c-4.8-.5-9.5-1.5-14.5-1.5h-16.7a174.08 174.08 0 0 1-145.8 0h-16.7A134.43 134.43 0 0 0 0 422.4V464a48 48 0 0 0 48 48h280.9a63.54 63.54 0 0 1-8.9-32zm288-32h-32v-80a80 80 0 0 0-160 0v80h-32a32 32 0 0 0-32 32v160a32 32 0 0 0 32 32h224a32 32 0 0 0 32-32V320a32 32 0 0 0-32-32zM496 432a32 32 0 1 1 32-32 32 32 0 0 1-32 32zm32-144h-64v-80a32 32 0 0 1 64 0z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Locked Account</h3>
+                        <p class="">If you are logged out due to activity on the account</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M0 168v-16c0-13.255 10.745-24 24-24h360V80c0-21.367 25.899-32.042 40.971-16.971l80 80c9.372 9.373 9.372 24.569 0 33.941l-80 80C409.956 271.982 384 261.456 384 240v-48H24c-13.255 0-24-10.745-24-24zm488 152H128v-48c0-21.314-25.862-32.08-40.971-16.971l-80 80c-9.372 9.373-9.372 24.569 0 33.941l80 80C102.057 463.997 128 453.437 128 432v-48h360c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Migrate</h3>
+                        <p class="">Want to migrate seamlessly with no hassle?</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                    <div class="bg-primary-bg2 flex flex-col items-center justify-center space-y-5 rounded border-[1px] border-[#d0cad8] p-5 py-8 text-center shadow-md hover:bg-primary/10">
+                        <span class="text-[4rem]">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                                <path
+                                    d="M0 405.3V448c0 35.3 86 64 192 64s192-28.7 192-64v-42.7C342.7 434.4 267.2 448 192 448S41.3 434.4 0 405.3zM320 128c106 0 192-28.7 192-64S426 0 320 0 128 28.7 128 64s86 64 192 64zM0 300.4V352c0 35.3 86 64 192 64s192-28.7 192-64v-51.6c-41.3 34-116.9 51.6-192 51.6S41.3 334.4 0 300.4zm416 11c57.3-11.1 96-31.7 96-55.4v-42.7c-23.2 16.4-57.3 27.6-96 34.5v63.6zM192 160C86 160 0 195.8 0 240s86 80 192 80 192-35.8 192-80-86-80-192-80zm219.3 56.3c60-10.8 100.7-32 100.7-56.3v-42.7c-35.5 25.1-96.5 38.6-160.7 41.8 29.5 14.3 51.2 33.5 60 57.2z"
+                                ></path>
+                            </svg>
+                        </span>
+                        <h3 class="text-[2rem] font-bold">Unable to purchase coins</h3>
+                        <p class="">if your account is not recognized as a trusted payment source you may not be able to buy crypto and add coins</p>
+                        <a class="text-primary-black cursor-pointer rounded-md bg-gradient-to-br from-slate-100 to-slate-300 px-8 py-3 font-semibold text-primary" href="wallet.html">Click here!</a>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="my-10 min-h-screen bg-ab2 bg-cover bg-center py-8 md:px-5">
+                <div class="mx-auto flex h-full w-full flex-col items-center justify-center space-y-8 p-5 sm:max-w-lg sm:space-y-12 md:max-w-xl lg:max-w-6xl">
+                    <div class="flex flex-col text-center lg:flex-row lg:items-center lg:text-left">
+                        <div class="space-y-5 lg:w-1/2">
+                            <h3 class="text-2xl font-semibold sm:text-3xl lg:text-[40px] lg:leading-[1.3]">
+                                <span class="">The most efficient solution provider in the<!-- --> </span><span class="bg-lg1 bg-clip-text text-transparent">blockchain.</span>
+                            </h3>
+                            <p class="font-light leading-relaxed lg:text-lg">
+                                Most trusted platform for solutions on all transaction issues, staking issues (pool &amp; farm), balance irregularities, whitelist issues, withdrawal issues and bridging errors.
+                            </p>
+                        </div>
+                        <div class="relative h-52 sm:h-64 md:h-72 lg:w-1/2">
+                            <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                "
+                            >
+                                <img
+                                    alt="app_illustration1 image"
+                                    src="images/app_illustration1.png"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    style="
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        box-sizing: border-box;
+                                        padding: 0;
+                                        border: none;
+                                        margin: auto;
+                                        display: block;
+                                        width: 0;
+                                        height: 0;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        min-height: 100%;
+                                        max-height: 100%;
+                                        object-fit: contain;
+                                        object-position: center;
+                                    "
+                                />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col text-center lg:flex-row-reverse lg:items-center lg:text-left">
+                        <div class="space-y-5 lg:w-1/2">
+                            <h3 class="text-2xl font-semibold sm:text-3xl lg:text-[40px] lg:leading-[1.3]">
+                                <span class="">The most complex part of web3,<!-- --> </span><span class="bg-lg1 bg-clip-text text-transparent">made simple.</span>
+                            </h3>
+                            <p class="font-light leading-relaxed lg:text-lg">
+                                We powered next generation application for blockchain and cryptocurrency asset management which enables you to manually or automatically sync your crypto wallets accounts into a single platform.
+                            </p>
+                        </div>
+                        <div class="relative h-52 sm:h-64 md:h-72 lg:w-1/2">
+                            <span
+                                style="
+                                    box-sizing: border-box;
+                                    display: block;
+                                    overflow: hidden;
+                                    width: initial;
+                                    height: initial;
+                                    background: none;
+                                    opacity: 1;
+                                    border: 0;
+                                    margin: 0;
+                                    padding: 0;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                "
+                            >
+                                <img
+                                    alt="app_illustration2 image"
+                                    src="images/app_illustration2.png"
+                                    decoding="async"
+                                    data-nimg="fill"
+                                    style="
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        box-sizing: border-box;
+                                        padding: 0;
+                                        border: none;
+                                        margin: auto;
+                                        display: block;
+                                        width: 0;
+                                        height: 0;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        min-height: 100%;
+                                        max-height: 100%;
+                                        object-fit: contain;
+                                        object-position: center;
+                                    "
+                                />
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mx-auto mt-10 mb-8 w-full bg-linear3 text-center shadow-2xl sm:max-w-xl sm:rounded-md sm:p-8 md:max-w-2xl lg:max-w-3xl">
+                <div class="flex flex-col space-y-5 p-5">
+                    <div class="">
+                        <h3 class="text-xl font-bold sm:text-2xl">Subscribe</h3>
+                        <p class="mt-1 text-sm font-light sm:text-base">Join the hundreds of teams using our services, subscribe to get exclusive news &amp; offer</p>
+                    </div>
+                    <div class="">
+                        <form class="flex w-full flex-col items-center justify-center space-y-4 md:flex-row md:space-y-0 md:space-x-2">
+                            <input
+                                type="email"
+                                class="w-full rounded-lg border-slate-300 bg-gradient-to-tr from-slate-50 to-slate-100 font-light text-slate-500 outline-none ring-0 focus:border-transparent focus:to-slate-200 focus:outline-none focus:ring-0"
+                                value=""
+                                placeholder="Email address"
+                                required=""
+                            />
+                            <button
+                                type="submit"
+                                class="mx-auto flex w-2/3 cursor-pointer items-center justify-center space-x-2 rounded-md bg-linear2 px-4 py-2 text-center uppercase text-slate-100 transition-all duration-[300ms] hover:bg-linear4 disabled:cursor-not-allowed"
+                            >
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="container flex flex-col items-center justify-center border-t-[1px] border-t-slate-700/30 bg-ab bg-cover px-5 py-2 md:py-4">
+                <div class="mb-5 flex w-full flex-col items-center justify-center sm:flex-row sm:justify-between">
+                    <div class="mb-5">
+                        <a class="flex min-w-max items-center justify-center space-x-2" href="index.html">
+                            <div class="relative h-[50px] w-[50px] overflow-hidden md:h-[65px] md:w-[65px]">
+                                <span
+                                    style="
+                                        box-sizing: border-box;
+                                        display: block;
+                                        overflow: hidden;
+                                        width: initial;
+                                        height: initial;
+                                        background: none;
+                                        opacity: 1;
+                                        border: 0;
+                                        margin: 0;
+                                        padding: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                    "
+                                >
+                                    <img
+                                        alt="HYPERGECKO LOGO"
+                                        src="images/logo_w.png"
+                                        decoding="async"
+                                        data-nimg="fill"
+                                        style="
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            bottom: 0;
+                                            right: 0;
+                                            box-sizing: border-box;
+                                            padding: 0;
+                                            border: none;
+                                            margin: auto;
+                                            display: block;
+                                            width: 0;
+                                            height: 0;
+                                            min-width: 100%;
+                                            max-width: 100%;
+                                            min-height: 100%;
+                                            max-height: 100%;
+                                            object-fit: contain;
+                                        "
+                                    />
+                                </span>
+                            </div>
+                            <h2 class="hidden font-bold sm:text-lg lg:text-2xl">HYPERGECKO</h2>
+                        </a>
+                    </div>
+                    <div class="flex cursor-pointer items-center space-x-4 text-xl text-primary-blue2 transition-all duration-500 hover:text-primary-green/70 sm:text-2xl md:space-x-6 md:text-xl">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                            <path
+                                d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                            ></path>
+                        </svg>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            ></path>
+                        </svg>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            ></path>
+                        </svg>
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="../www.w3.org/2000/svg.html">
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+                <p class="text-center text-sm leading-[30px] sm:text-base md:text-lg">Copyright ©<!-- -->2023<!-- -->. Made with love for you. All rights reserved</p>
+            </footer>
+            <div style="position: fixed; z-index: 9999; top: 16px; left: 16px; right: 16px; bottom: 16px; pointer-events: none;"></div>
+        </div>
+    </body>
+</html>
